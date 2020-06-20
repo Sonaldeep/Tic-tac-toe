@@ -43,6 +43,7 @@ function resetGame() {
 	gameOver = false;
 	empty = 9;
 }
+resetGame();
 
 /* Function cellClicked() is called
  when the event listeners for the "td" cells fire which occurs
