@@ -43,7 +43,7 @@ function resetGame() {
 	gameOver = false;
 	empty = 9;
 }
-resetGame();
+
 
 /* Function cellClicked() is called
  when the event listeners for the "td" cells fire which occurs
@@ -68,7 +68,7 @@ function cellClicked(cell) {
     checkWin();    
     player = (player === "X") ? "O" : "X";
     document.getElementById("player").innerHTML = player;
-}
+       }
 }
 /* Function checkWin() is called to check all winning combinations and display results
  */
