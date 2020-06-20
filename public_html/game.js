@@ -57,7 +57,9 @@ function cellClicked(cell) {
 
     //TODO: 1-5 should occur only when the selected cell is empty and the game is 
     // still in progress!
-
+       if(cell.innerHTML == ""){
+           empty--;
+       
     // TODO: decrease # of empty cells by 1
   
     // TODO: document this code from class
@@ -66,7 +68,7 @@ function cellClicked(cell) {
     player = (player === "X") ? "O" : "X";
     document.getElementById("player").innerHTML = player;
 }
-
+}
 /* Function checkWin() is called to check all winning combinations and display results
  */
 function checkWin() {
